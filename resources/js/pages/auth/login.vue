@@ -44,6 +44,9 @@
 
               <!-- GitHub Login Button -->
               <login-with-github />
+
+              <!-- Auth0 Login Button -->
+              <login-with-auth0 />
             </div>
           </div>
         </form>
@@ -55,12 +58,14 @@
 <script>
 import Form from 'vform'
 import LoginWithGithub from '~/components/LoginWithGithub'
+import LoginWithAuth0 from '~/components/LoginWithAuth0'
 
 export default {
   middleware: 'guest',
 
   components: {
-    LoginWithGithub
+    LoginWithGithub,
+    LoginWithAuth0
   },
 
   metaInfo () {
